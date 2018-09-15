@@ -60,13 +60,13 @@ describe('Intern Testing', () => {
         /*
             - จงเขียน function เพื่อ return function เพื่อให้ได้ผลลัพธ์ตามโค้ดด้านล่าง
         */
-        const calculator = utils.calculator(1, 2)
+        let calculator = utils.calculator(1, 2)
         expect(calculator.add()).to.equal(3)
         expect(calculator.sub()).to.equal(-1)
         expect(calculator.div()).to.equal(0.5)
         expect(calculator.multi()).to.equal(2)
 
-        const calculator = utils.calculator(8, 4)
+        calculator = utils.calculator(8, 4)
         expect(calculator.add()).to.equal(12)
         expect(calculator.sub()).to.equal(4)
         expect(calculator.div()).to.equal(2)
